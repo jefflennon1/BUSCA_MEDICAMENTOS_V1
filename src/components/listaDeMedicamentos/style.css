@@ -6,3 +6,21 @@
 .nomeEcomposto{
     margin-bottom: 10px;
 }
+
+#inp_bus_comp{
+    padding: 0.5em;
+    height: 22px;
+    width: 32vw;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    padding: 20px;
+}
