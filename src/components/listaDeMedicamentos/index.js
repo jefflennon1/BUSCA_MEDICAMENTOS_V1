@@ -1,34 +1,42 @@
 import React,{ useEffect, useState } from 'react';
 // import Api from '../../../services/Api';
 import Api from '../../../services/Api';
-import './style.css'
+import './style.css';
+import Icon from '../../assets/icon_medico2.png'
 
 
 export default function ListaDeMedicamentos(){
     const [ medicamento, setMedicamento ] = useState([]);
+    function buscaComposto(){
+        const value = document.getElementById('inp_bus_comp').value;
+         value == "" ? setMedicamento([]) :
 
-    useEffect(()=>{
-        Api.get('/composicao?COMPOSICAO=ACIDO').then((response)=>{
+         Api.get(`/composicao?COMPOSICAO=${value}`).then((response)=>{
             setMedicamento(response.data);
-        })    
-    },[]);
-
+        });
+    }
   
    
     return(
         <>
            <section id="container"> 
-                <h1>App que busca medicamentos baseando-se em seu composto</h1>
-                <input type="text" placeholder="Digite o nome composto" autoComplete="on" id="inp_bus_comp"/>
+                <section className="principal">
+                    <img src={Icon} alt=""/>
+                        <h1>Olá, tudo bem com você?</h1>
+                        <input type="text" placeholder="Digite o nome do composto" 
+                        autoComplete="on" id="inp_bus_comp"
+                        onChange={()=>buscaComposto()}
+                        />
+                        <div className="lista_medicamentos">
+                                {medicamento.map( medicamento=> <div key={medicamento._id}>
 
-                {medicamento.map( medicamento=> <div key={medicamento._id}>
-
-                    <div className="nomeEcomposto">
-                        <span>Nome: {medicamento.NOME}</span> &nbsp;&nbsp;
-                        <span>Composto: {medicamento.COMPOSICAO}</span>
-                    </div>   
-                </div>
-                )}   
+                                    <div className="nomeMedicamento">
+                                        <span> {medicamento.NOME}</span>
+                                    </div>   
+                                </div>
+                                )}  
+                        </div> 
+                </section> 
             </section>         
         </>
     )
@@ -53,5 +61,4 @@ async function buscaDadosDaApiAbcFarma(){
             },
     })
         setMedicamento(response.data.data);
-    console.log(response.data.data)
 }

@@ -2,15 +2,28 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #2E86C1 ;
+}
 
-.nomeEcomposto{
-    margin-bottom: 10px;
+.nomeMedicamento{
+    padding: 15px;
 }
 
 #inp_bus_comp{
     padding: 0.5em;
-    height: 22px;
-    width: 32vw;
+    height: 25px;
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+}
+
+#inp_bus_comp::placeholder{
+    text-align: center;
+    text-transform: uppercase;
+    color: #c0c0c0;
+    letter-spacing: 2px;
 }
 
 #container{
@@ -23,4 +36,51 @@
 
 h1{
     padding: 20px;
+    text-align: center;
+    /* margin-top: 15px; */
+    font-family: sans-serif;
 }
+
+.lista_medicamentos {
+    background-color: #d4d4d4;
+    width: 300px;
+    padding: 0.7em;
+    border-radius: 0px 0px 10px 10px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: hsla(240,8%,46%,1);
+    margin-bottom: 22px;
+}
+
+
+
+section.principal {
+    background-color: whitesmoke ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    /* height: 210px; */
+    box-shadow: 10px 10px 3px hsl(0deg 0% 16%);
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+img{
+    height: 100px;
+    margin-top: 25px;
+}
+
+
+
