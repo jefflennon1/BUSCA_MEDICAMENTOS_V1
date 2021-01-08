@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,12 +11,19 @@ body{
 
 .nomeMedicamento{
     padding: 15px;
+    box-shadow: 1px 1px azure;
+}
+
+
+.nomeMedicamento:hover{
+    background-color: #ACE7FE; 
 }
 
 #inp_bus_comp{
     padding: 0.5em;
     height: 25px;
-    width: 300px;
+    width: 35vw;
+    min-width: 300px;
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #b4b4b4;
@@ -23,7 +33,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     color: #c0c0c0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 #container{
@@ -35,15 +45,16 @@ body{
 }
 
 h1{
-    padding: 20px;
+    padding: 10px 0px 5px 0px;
     text-align: center;
     /* margin-top: 15px; */
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: clamp(1em, 1em + 1vw, 2em);
 }
 
 .lista_medicamentos {
-    background-color: #d4d4d4;
-    width: 300px;
+    background-color: #C3EEFF;
     padding: 0.7em;
     border-radius: 0px 0px 10px 10px;
     font-size: small;
@@ -56,20 +67,24 @@ h1{
     font-weight: bold;
     color: hsla(240,8%,46%,1);
     margin-bottom: 22px;
+    width: 35vw;
+    min-width: 300px;
+    overflow:auto; 
 }
 
 
 
 section.principal {
-    background-color: whitesmoke ;
+    background-color: white ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    /* height: 210px; */
+    width: 42vw;
+    min-width: 330px;
     box-shadow: 10px 10px 3px hsl(0deg 0% 16%);
     border-radius: 10px;
+    min-height: 60vh;
 }
 
 input:focus {
@@ -82,5 +97,26 @@ img{
     margin-top: 25px;
 }
 
+#search{
+    height: 20px;
+    position: fixed;
+    margin-top: 18px;
+    opacity: 55%;
+}
+#inpuEicon{
+    display: flex;
+}
+
+.displayNone{
+    display: none;
+}
+
+p{
+    font-family: 'Darker Grotesque', sans-serif;
+    text-align: center;
+    min-width: 300px;
+    width: 35vw;
+    font-size: clamp(1em, 0.5em + 1vw, 1.5em);
+}
 
 
