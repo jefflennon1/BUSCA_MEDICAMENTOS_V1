@@ -6,7 +6,7 @@
     margin: 0;
 }
 body{
-    background-color: #2E86C1 ;
+    background-color: #599dac ;
 }
 
 .nomeMedicamento{
@@ -27,13 +27,14 @@ body{
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #b4b4b4;
+    margin-bottom: 10px;
 }
 
 #inp_bus_comp::placeholder{
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #c0c0c0;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 #container{
@@ -47,7 +48,7 @@ body{
 h1{
     padding: 10px 0px 5px 0px;
     text-align: center;
-    /* margin-top: 15px; */
+    color: #2E4053;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.5px;
     font-size: clamp(1em, 1em + 1vw, 2em);
@@ -117,6 +118,30 @@ p{
     min-width: 300px;
     width: 35vw;
     font-size: clamp(1em, 0.5em + 1vw, 1.5em);
+}
+
+label{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #2E4053;
+    font-weight: bold;
+}
+
+.containerSelect {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13em;
+    text-transform: uppercase;
+}
+
+select{
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    color: #2E4053;
+    font-weight: bold;
+    border-color: #2E4053;
 }
 
 
