@@ -3,7 +3,8 @@ import React,{ useEffect, useState } from 'react';
 import Api from '../../../services/Api';
 import './style.css';
 import icon from '../../assets/icon_medico2.png';
-import search from '../../assets/search.png'
+import search from '../../assets/search.png';
+import Bula from '../bula';
 
 
 export default function ListaDeMedicamentos(){
@@ -59,7 +60,7 @@ export default function ListaDeMedicamentos(){
                             <div className="lista_medicamentos" id="lista_medicamentos">
                                     {medicamento.map( medicamento=> <div key={medicamento._id}>
                                         <div className="nomeMedicamento"  onClick={()=>buscaBulaDomedicamento(medicamento.NOME)}>
-                                            <span> {medicamento.NOME}</span>
+                                            <span onClick={()=>criaBula(medicamento.NOME)} > {medicamento.NOME}</span>
                                         </div>   
                                     </div>
                                     )}  
@@ -68,6 +69,12 @@ export default function ListaDeMedicamentos(){
             </section>         
         </>
     )
+
+    function criaBula(props){
+        const bula = document.createElement('div');
+        bula.append(<Bula props={props}/>);
+        document.getElementById('container').append(bula);
+    }
 }
 
 
