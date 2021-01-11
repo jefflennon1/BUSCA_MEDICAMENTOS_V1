@@ -59,8 +59,8 @@ export default function ListaDeMedicamentos(){
                             </span>   
                             <div className="lista_medicamentos" id="lista_medicamentos">
                                     {medicamento.map( medicamento=> <div key={medicamento._id}>
-                                        <div className="nomeMedicamento"  onClick={()=>buscaBulaDomedicamento(medicamento.NOME)}>
-                                            <span onClick={()=>criaBula(medicamento.NOME)} > {medicamento.NOME}</span>
+                                        <div className="nomeMedicamento"  >
+                                            <span > {medicamento.NOME}</span>
                                         </div>   
                                     </div>
                                     )}  
@@ -70,11 +70,7 @@ export default function ListaDeMedicamentos(){
         </>
     )
 
-    function criaBula(props){
-        const bula = document.createElement('div');
-        bula.append(<Bula props={props}/>);
-        document.getElementById('container').append(bula);
-    }
+ 
 }
 
 
