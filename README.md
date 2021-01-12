@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  #### Para usar o projeto na sua máquina você precisa baixar os pacotes de desenvolvimento.
+  ### Para usar o projeto na sua máquina você precisa baixar os pacotes de desenvolvimento.
   rode o comando: <strong>yarn</strong>
 </p>  
 <p align="center">
