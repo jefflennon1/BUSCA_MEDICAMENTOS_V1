@@ -3,6 +3,6 @@
 
 ![]()
 
-<p  align=”center”>
-<img src="/src/assets/2.1gif.gif"  align=”center”>
+<p  align-items="center">
+<img src="/src/assets/2.1gif.gif"  align-items="center">
 </p>
