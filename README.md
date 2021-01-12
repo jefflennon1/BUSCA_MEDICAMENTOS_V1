@@ -3,4 +3,6 @@
 
 ![]()
 
+<p  align=”center”>
 <img src="/src/assets/2.1gif.gif"  align=”center”>
+</p>
