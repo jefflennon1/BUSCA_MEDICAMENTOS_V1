@@ -13,9 +13,9 @@
 
 <p align="center">
   #### Para usar o projeto na sua máquina você precisa baixar os pacotes de desenvolvimento.
-  rode o comando: **yarn**
+  rode o comando: *yarn*
 </p>  
 <p align="center">
   Será necessário também ter o backend em node que eu desenvolvi em nodeJs que funciona em conjunto com este projeto. 
-  **vide: https://github.com/jefflennon1/api_medicamentos_backend **
+  ** vide: https://github.com/jefflennon1/api_medicamentos_backend **
 </p>  
